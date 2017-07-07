@@ -1,0 +1,50 @@
+﻿CREATE TABLE [dbo].[Emp_Grp_Data] (
+    [ID]              BIGINT          IDENTITY (1, 1) NOT NULL,
+    [row_date]        DATE            NULL,
+    [interval]        TIME (0)        NULL,
+    [EMP_GRP_NODE_SK] NUMERIC (15, 1) NULL,
+    [STF_GRP_SK]      NUMERIC (15, 1) NULL,
+    [i_stafftime]     BIGINT          NULL,
+    [i_availtime]     BIGINT          NULL,
+    [i_acdtime]       BIGINT          NULL,
+    [i_acwtime]       BIGINT          NULL,
+    [i_acwouttime]    BIGINT          NULL,
+    [i_acwintime]     BIGINT          NULL,
+    [i_auxtime]       BIGINT          NULL,
+    [i_auxouttime]    BIGINT          NULL,
+    [i_auxintime]     BIGINT          NULL,
+    [i_othertime]     BIGINT          NULL,
+    [acdcalls]        BIGINT          NULL,
+    [acdtime]         BIGINT          NULL,
+    [acwtime]         BIGINT          NULL,
+    [abncalls]        BIGINT          NULL,
+    [abntime]         BIGINT          NULL,
+    [i_ringtime]      BIGINT          NULL,
+    [Break]           BIGINT          NULL,
+    [Meeting]         BIGINT          NULL,
+    [Lunch]           BIGINT          NULL,
+    [Lead]            BIGINT          NULL,
+    [Closed]          BIGINT          NULL,
+    [DCTR]            BIGINT          NULL,
+    [Coach_Meeting]   BIGINT          NULL,
+    [Train]           BIGINT          NULL,
+    [Project]         BIGINT          NULL,
+    [Computer]        BIGINT          NULL,
+    [Personal]        BIGINT          NULL,
+    [Union]           BIGINT          NULL,
+    [Outbound]        BIGINT          NULL,
+    [Mentoring]       BIGINT          NULL,
+    [Aux]             BIGINT          NULL,
+    [EOS]             BIGINT          NULL,
+    [Chat]            BIGINT          NULL,
+    [PCBootup]        BIGINT          NULL,
+    CONSTRAINT [PK_Emp_Grp_Data] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [FK_Emp_Grp_Data_Emp_Grp] FOREIGN KEY ([EMP_GRP_NODE_SK]) REFERENCES [dbo].[Emp_Grp] ([EMP_GRP_NODE_SK]),
+    CONSTRAINT [FK_Emp_Grp_Data_Stf_Grp] FOREIGN KEY ([STF_GRP_SK]) REFERENCES [dbo].[Stf_Grp] ([STF_GRP_SK])
+);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Emp_Grp_Data]
+    ON [dbo].[Emp_Grp_Data]([row_date] ASC, [interval] ASC, [EMP_GRP_NODE_SK] ASC, [STF_GRP_SK] ASC);
+

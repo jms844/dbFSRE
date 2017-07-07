@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[For_Grp] (
+    [FOR_GRP_SK]   NUMERIC (15, 1) NOT NULL,
+    [CODE]         NVARCHAR (30)   NULL,
+    [TIME_ZONE_SK] NUMERIC (15, 1) NULL,
+    CONSTRAINT [PK_For_Grp] PRIMARY KEY CLUSTERED ([FOR_GRP_SK] ASC)
+);
+

@@ -1,0 +1,221 @@
+﻿-- =============================================
+-- Author:		Jaryn Seidl
+-- Create date: 
+-- Description:	
+-- =============================================
+CREATE PROCEDURE updateHAgent
+	-- Add the parameters for the stored procedure here
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	Update TableExists
+	Set 
+		TableExists.ti_stafftime = TableNew.ti_stafftime
+		,TableExists.ti_availtime = TableNew.ti_availtime
+		,TableExists.i_ringtime = TableNew.i_ringtime
+		,TableExists.ringtime = TableNew.ringtime
+		,TableExists.ringcalls = TableNew.ringcalls
+		,TableExists.i_acdtime = TableNew.i_acdtime
+		,TableExists.acdtime = TableNew.acdtime
+		,TableExists.acdcalls = TableNew.acdcalls
+		,TableExists.i_acwtime = TableNew.i_acwtime
+		,TableExists.acwtime = TableNew.acwtime
+		,TableExists.i_acwouttime = TableNew.i_acwouttime
+		,TableExists.acwouttime = TableNew.acwouttime
+		,TableExists.acwoutcalls = TableNew.acwoutcalls
+		,TableExists.i_acwintime = TableNew.i_acwintime
+		,TableExists.acwintime = TableNew.acwintime
+		,TableExists.acwincalls = TableNew.acwincalls
+		,TableExists.ti_auxtime = TableNew.ti_auxtime
+		,TableExists.i_auxouttime = TableNew.i_auxouttime
+		,TableExists.auxouttime = TableNew.auxouttime
+		,TableExists.auxoutcalls = TableNew.auxoutcalls
+		,TableExists.i_auxintime = TableNew.i_auxintime
+		,TableExists.auxintime = TableNew.auxintime
+		,TableExists.auxincalls = TableNew.auxincalls
+		,TableExists.i_acdothertime = TableNew.i_acdothertime
+		,TableExists.holdtime = TableNew.holdtime
+		,TableExists.holdcalls = TableNew.holdcalls
+		,TableExists.holdabncalls = TableNew.holdabncalls
+		,TableExists.transferred = TableNew.transferred
+		,TableExists.conference = TableNew.conference
+		,TableExists.abntime = TableNew.abntime
+		,TableExists.abncalls = TableNew.abncalls
+		,TableExists.ti_auxtime10 = TableNew.ti_auxtime10
+		,TableExists.ti_auxtime11 = TableNew.ti_auxtime11
+		,TableExists.ti_auxtime12 = TableNew.ti_auxtime12
+		,TableExists.ti_auxtime13 = TableNew.ti_auxtime13
+		,TableExists.ti_auxtime14 = TableNew.ti_auxtime14
+		,TableExists.ti_auxtime15 = TableNew.ti_auxtime15
+		,TableExists.ti_auxtime16 = TableNew.ti_auxtime16
+		,TableExists.ti_auxtime17 = TableNew.ti_auxtime17
+		,TableExists.ti_auxtime18 = TableNew.ti_auxtime18
+		,TableExists.ti_auxtime19 = TableNew.ti_auxtime19
+		,TableExists.ti_auxtime20 = TableNew.ti_auxtime20
+		,TableExists.ti_auxtime21 = TableNew.ti_auxtime21
+		,TableExists.ti_auxtime22 = TableNew.ti_auxtime22
+		,TableExists.ti_auxtime23 = TableNew.ti_auxtime23
+		,TableExists.ti_auxtime24 = TableNew.ti_auxtime24
+		,TableExists.ti_auxtime25 = TableNew.ti_auxtime25
+		,TableExists.ti_auxtime26 = TableNew.ti_auxtime26
+		,TableExists.ti_auxtime27 = TableNew.ti_auxtime27
+		,TableExists.ti_auxtime28 = TableNew.ti_auxtime28
+		,TableExists.ti_auxtime29 = TableNew.ti_auxtime29
+		,TableExists.ti_auxtime30 = TableNew.ti_auxtime30
+		,TableExists.ti_auxtime31 = TableNew.ti_auxtime31
+		,TableExists.ti_auxtime32 = TableNew.ti_auxtime32
+		,TableExists.ti_auxtime33 = TableNew.ti_auxtime33
+		,TableExists.ti_auxtime34 = TableNew.ti_auxtime34
+		,TableExists.ti_auxtime35 = TableNew.ti_auxtime35
+		,TableExists.ti_auxtime36 = TableNew.ti_auxtime36
+		,TableExists.ti_auxtime37 = TableNew.ti_auxtime37
+		,TableExists.ti_auxtime38 = TableNew.ti_auxtime38
+		,TableExists.ti_auxtime39 = TableNew.ti_auxtime39
+		,TableExists.ti_auxtime40 = TableNew.ti_auxtime40
+		,TableExists.ti_auxtime41 = TableNew.ti_auxtime41
+		,TableExists.ti_auxtime42 = TableNew.ti_auxtime42
+		,TableExists.ti_auxtime43 = TableNew.ti_auxtime43
+		,TableExists.ti_auxtime44 = TableNew.ti_auxtime44
+		,TableExists.ti_auxtime45 = TableNew.ti_auxtime45
+		,TableExists.ti_auxtime46 = TableNew.ti_auxtime46
+		,TableExists.ti_auxtime47 = TableNew.ti_auxtime47
+		,TableExists.ti_auxtime48 = TableNew.ti_auxtime48
+		,TableExists.ti_auxtime49 = TableNew.ti_auxtime49
+		,TableExists.ti_auxtime50 = TableNew.ti_auxtime50
+		,TableExists.ti_auxtime51 = TableNew.ti_auxtime51
+		,TableExists.ti_auxtime52 = TableNew.ti_auxtime52
+		,TableExists.ti_auxtime53 = TableNew.ti_auxtime53
+		,TableExists.ti_auxtime54 = TableNew.ti_auxtime54
+		,TableExists.ti_auxtime55 = TableNew.ti_auxtime55
+		,TableExists.ti_auxtime56 = TableNew.ti_auxtime56
+		,TableExists.ti_auxtime57 = TableNew.ti_auxtime57
+		,TableExists.ti_auxtime58 = TableNew.ti_auxtime58
+		,TableExists.ti_auxtime59 = TableNew.ti_auxtime59
+		,TableExists.ti_auxtime60 = TableNew.ti_auxtime60
+		,TableExists.ti_auxtime61 = TableNew.ti_auxtime61
+		,TableExists.ti_auxtime62 = TableNew.ti_auxtime62
+		,TableExists.ti_auxtime63 = TableNew.ti_auxtime63
+		,TableExists.ti_auxtime64 = TableNew.ti_auxtime64
+		,TableExists.ti_auxtime65 = TableNew.ti_auxtime65
+		,TableExists.ti_auxtime66 = TableNew.ti_auxtime66
+		,TableExists.ti_auxtime67 = TableNew.ti_auxtime67
+		,TableExists.ti_auxtime68 = TableNew.ti_auxtime68
+		,TableExists.ti_auxtime69 = TableNew.ti_auxtime69
+		,TableExists.ti_auxtime70 = TableNew.ti_auxtime70
+		,TableExists.ti_auxtime71 = TableNew.ti_auxtime71
+		,TableExists.ti_auxtime72 = TableNew.ti_auxtime72
+		,TableExists.ti_auxtime73 = TableNew.ti_auxtime73
+		,TableExists.ti_auxtime74 = TableNew.ti_auxtime74
+		,TableExists.ti_auxtime75 = TableNew.ti_auxtime75
+		,TableExists.ti_auxtime76 = TableNew.ti_auxtime76
+		,TableExists.ti_auxtime77 = TableNew.ti_auxtime77
+		,TableExists.ti_auxtime78 = TableNew.ti_auxtime78
+		,TableExists.ti_auxtime79 = TableNew.ti_auxtime79
+		,TableExists.ti_auxtime80 = TableNew.ti_auxtime80
+		,TableExists.ti_auxtime81 = TableNew.ti_auxtime81
+		,TableExists.ti_auxtime82 = TableNew.ti_auxtime82
+		,TableExists.ti_auxtime83 = TableNew.ti_auxtime83
+		,TableExists.ti_auxtime84 = TableNew.ti_auxtime84
+		,TableExists.ti_auxtime85 = TableNew.ti_auxtime85
+		,TableExists.ti_auxtime86 = TableNew.ti_auxtime86
+		,TableExists.ti_auxtime87 = TableNew.ti_auxtime87
+		,TableExists.ti_auxtime88 = TableNew.ti_auxtime88
+		,TableExists.ti_auxtime89 = TableNew.ti_auxtime89
+		,TableExists.ti_auxtime90 = TableNew.ti_auxtime90
+		,TableExists.ti_auxtime91 = TableNew.ti_auxtime91
+		,TableExists.ti_auxtime92 = TableNew.ti_auxtime92
+		,TableExists.ti_auxtime93 = TableNew.ti_auxtime93
+		,TableExists.ti_auxtime94 = TableNew.ti_auxtime94
+		,TableExists.ti_auxtime95 = TableNew.ti_auxtime95
+		,TableExists.ti_auxtime96 = TableNew.ti_auxtime96
+		,TableExists.ti_auxtime97 = TableNew.ti_auxtime97
+		,TableExists.ti_auxtime98 = TableNew.ti_auxtime98
+		,TableExists.ti_auxtime99 = TableNew.ti_auxtime99
+		,TableExists.i_stafftime = TableNew.i_stafftime
+		,TableExists.i_availtime = TableNew.i_availtime
+		,TableExists.i_othertime = TableNew.i_othertime
+		,TableExists.acwoutoffcalls = TableNew.acwoutoffcalls
+		,TableExists.acwoutofftime = TableNew.acwoutofftime
+		,TableExists.acwoutadjcalls = TableNew.acwoutadjcalls
+		,TableExists.auxoutoffcalls = TableNew.auxoutoffcalls
+		,TableExists.auxoutofftime = TableNew.auxoutofftime
+		,TableExists.auxoutadjcalls = TableNew.auxoutadjcalls
+		,TableExists.event1 = TableNew.event1
+		,TableExists.event2 = TableNew.event2
+		,TableExists.event3 = TableNew.event3
+		,TableExists.event4 = TableNew.event4
+		,TableExists.event5 = TableNew.event5
+		,TableExists.event6 = TableNew.event6
+		,TableExists.event7 = TableNew.event7
+		,TableExists.event8 = TableNew.event8
+		,TableExists.event9 = TableNew.event9
+		,TableExists.o_acdcalls = TableNew.o_acdcalls
+		,TableExists.o_acdtime = TableNew.o_acdtime
+		,TableExists.o_acwtime = TableNew.o_acwtime
+		,TableExists.da_acdcalls = TableNew.da_acdcalls
+		,TableExists.da_anstime = TableNew.da_anstime
+		,TableExists.da_abncalls = TableNew.da_abncalls
+		,TableExists.da_abntime = TableNew.da_abntime
+		,TableExists.i_da_acdtime = TableNew.i_da_acdtime
+		,TableExists.i_da_acwtime = TableNew.i_da_acwtime
+		,TableExists.da_acdtime = TableNew.da_acdtime
+		,TableExists.da_acwtime = TableNew.da_acwtime
+		,TableExists.da_othercalls = TableNew.da_othercalls
+		,TableExists.da_othertime = TableNew.da_othertime
+		,TableExists.ansringtime = TableNew.ansringtime
+		,TableExists.ti_othertime = TableNew.ti_othertime
+		,TableExists.da_acwincalls = TableNew.da_acwincalls
+		,TableExists.da_acwintime = TableNew.da_acwintime
+		,TableExists.da_acwocalls = TableNew.da_acwocalls
+		,TableExists.da_acwotime = TableNew.da_acwotime
+		,TableExists.da_acwoadjcalls = TableNew.da_acwoadjcalls
+		,TableExists.da_acwooffcalls = TableNew.da_acwooffcalls
+		,TableExists.da_acwoofftime = TableNew.da_acwoofftime
+		,TableExists.noansredir = TableNew.noansredir
+		,TableExists.incomplete = TableNew.incomplete
+		,TableExists.acdauxoutcalls = TableNew.acdauxoutcalls
+		,TableExists.i_acdaux_outtime = TableNew.i_acdaux_outtime
+		,TableExists.i_acdauxintime = TableNew.i_acdauxintime
+		,TableExists.phantomabns = TableNew.phantomabns
+		,TableExists.i_auxtime = TableNew.i_auxtime
+		,TableExists.holdacdtime = TableNew.holdacdtime
+		,TableExists.da_release = TableNew.da_release
+		,TableExists.acd_release = TableNew.acd_release
+		,TableExists.ti_auxtime0 = TableNew.ti_auxtime0
+		,TableExists.ti_auxtime1 = TableNew.ti_auxtime1
+		,TableExists.ti_auxtime2 = TableNew.ti_auxtime2
+		,TableExists.ti_auxtime3 = TableNew.ti_auxtime3
+		,TableExists.ti_auxtime4 = TableNew.ti_auxtime4
+		,TableExists.ti_auxtime5 = TableNew.ti_auxtime5
+		,TableExists.ti_auxtime6 = TableNew.ti_auxtime6
+		,TableExists.ti_auxtime7 = TableNew.ti_auxtime7
+		,TableExists.ti_auxtime8 = TableNew.ti_auxtime8
+		,TableExists.ti_auxtime9 = TableNew.ti_auxtime9
+		,TableExists.acdcalls_r1 = TableNew.acdcalls_r1
+		,TableExists.acdcalls_r2 = TableNew.acdcalls_r2
+		,TableExists.i_otherstbytime = TableNew.i_otherstbytime
+		,TableExists.i_auxstbytime = TableNew.i_auxstbytime
+		,TableExists.intrnotifies = TableNew.intrnotifies
+		,TableExists.acceptedintrs = TableNew.acceptedintrs
+		,TableExists.rejectedintrs = TableNew.rejectedintrs
+		,TableExists.intrdeliveries = TableNew.intrdeliveries
+		,TableExists.icrpullcalls = TableNew.icrpullcalls
+		,TableExists.icrpulltime = TableNew.icrpulltime
+		,TableExists.da_icrpullcalls = TableNew.da_icrpullcalls
+		,TableExists.da_icrpulltime = TableNew.da_icrpulltime
+		,TableExists.attrib_id = TableNew.attrib_id
+		,TableExists.CMS = TableNew.CMS
+	From
+		hAgent TableExists JOIN hAgentStg TableNew
+			ON TableExists.row_date = TableNew.row_date
+			and TableExists.interval = TableNew.interval
+			and TableExists.acd = TableNew.acd
+			and TableExists.split = TableNew.split
+			and TableExists.logid = TableNew.logid
+	
+	Delete from hAgentStg;
+END

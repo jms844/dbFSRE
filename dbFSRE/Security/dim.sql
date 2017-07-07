@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [dim]
+    AUTHORIZATION [CORP\Jms844];
+

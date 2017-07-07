@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [fact]
+    AUTHORIZATION [CORP\Jms844];
+

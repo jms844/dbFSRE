@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Stf_Grp] (
+    [STF_GRP_SK]      NUMERIC (15, 1) NOT NULL,
+    [EMP_GRP_NODE_SK] DECIMAL (15, 1) NULL,
+    [CODE]            NVARCHAR (30)   NULL,
+    [TIME_ZONE_SK]    NUMERIC (15, 1) NULL,
+    CONSTRAINT [PK_Stf_Grp_1] PRIMARY KEY CLUSTERED ([STF_GRP_SK] ASC)
+);
+

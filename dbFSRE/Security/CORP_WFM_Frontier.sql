@@ -1,0 +1,2 @@
+﻿CREATE USER [CORP\WFM_Frontier] FOR LOGIN [CORP\WFM_Frontier];
+

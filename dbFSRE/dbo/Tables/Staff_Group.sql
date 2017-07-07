@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Staff_Group] (
+    [STF_GRP_SK]      DECIMAL (15, 1) NOT NULL,
+    [Staff_Group]     NVARCHAR (30)   NOT NULL,
+    [EMP_GRP_NODE_SK] DECIMAL (15, 1) NULL,
+    CONSTRAINT [PK_Staff_Group] PRIMARY KEY CLUSTERED ([STF_GRP_SK] ASC)
+);
+

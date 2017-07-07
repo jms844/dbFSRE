@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[Phone_ID] (
+    [ID]           INT             IDENTITY (1, 1) NOT NULL,
+    [ACD_INST_SK]  NUMERIC (15, 1) NULL,
+    [ACD_LOGIN_ID] NVARCHAR (20)   NULL,
+    [EMP_SK]       NUMERIC (15, 1) NULL,
+    CONSTRAINT [PK_Phone_ID] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_Phone_ID]
+    ON [dbo].[Phone_ID]([ACD_INST_SK] ASC, [ACD_LOGIN_ID] ASC);
+

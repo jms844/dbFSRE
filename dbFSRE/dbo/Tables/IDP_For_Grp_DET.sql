@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[IDP_For_Grp_DET] (
+    [IDP_SK]      NUMERIC (15, 1) NULL,
+    [FOR_GRP_SK]  NUMERIC (15, 1) NULL,
+    [Period]      DATETIME2 (0)   NULL,
+    [ORG_FOR_VOL] NUMERIC (15, 1) NULL,
+    [RVS_FOR_VOL] NUMERIC (15, 1) NULL,
+    CONSTRAINT [FK_IDP_For_Grp_DET_For_Grp] FOREIGN KEY ([FOR_GRP_SK]) REFERENCES [dbo].[For_Grp] ([FOR_GRP_SK])
+);
+
